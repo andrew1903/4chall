@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.google.com/specimen/Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{box-sizing: border-box;}
+    header{text-align: center; width: 33%; margin: 50px auto}
+    body{font-family: 'Poppins', sans-serif;background-color: hsl(0, 0%, 98%);}
+    .txt_1{color: hsl(229, 6%, 66%); font-size: 28px; font-weight: 200;}
+    .txt_2{color:hsl(234, 12%, 34%); font-size: 28px; font-weight: 600; line-height: 25px;}
+    .txt_22{color:hsl(234, 12%, 34%)}
+    .txt_3{color: hsl(229, 6%, 66%); font-size: 14px; font-weight: 400; line-height: 25px;}
+    .container{display: flex; flex-wrap: wrap; justify-content: center;}
+    .container p{width: 60%}
+    .container div{margin: 18px; background-color: aqua; padding: 10px; width: 23%; height: auto;}
+    .container div img{display: block;margin-left: auto;padding-top: 20px; padding-right: 10px; padding-bottom: 10px}
+    .container{max-width: 1140px;margin: 2% auto;}
+    .container .card{background-color: white;border-radius: 10px;padding: 30px;position: relative;overflow: hidden;margin: 15px;width: 350px;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);}
+    .container .card::after{position: absolute;top:0;left:0;height: 5px;width:100%;content: '';}
+    .blue::after{background-color: hsl(180, 62%, 55%);}
+    .red::after{background-color: hsl(0, 78%, 62%);}
+    .yellow::after{background-color: hsl(34, 97%, 64%);}
+    .blues::after{background-color: hsl(212, 86%, 64%);}
+    .mm{transform: translateY(50%);}
+    @media(max-width: 775px){
+      .mm{transform: translateY(0);}
+      header p{padding: 0 30px;}  }
+  </style>
+</head>
+<body>
+  <header>
+    <h2 class="txt_1">Reliable, efficient delivery</h2>
+    <h1 class="txt_2t">Powered by Technology</h1>
+    <p class="txt_3">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+  </header>
+  <div class="container">
+    <div class="card blue mm">
+      <h3 class="txt_22">Supervisor</h3>
+      <p class="txt_3">Monitors activity to identify project roadblocks</p>
+      <img src="images/icon-supervisor.svg" alt="Supervisor">
+    </div>
+    <div class="card red">
+      <h3 class="txt_22">Team Builder</h3>
+      <p class="txt_3">Scans our talent network to create the optimal team for your project</p>
+      <img src="images/icon-team-builder.svg" alt="Team-b.">
+    </div>
+    <div class="card yellow mm">
+      <h3 class="txt_22">Karma</h3>
+      <p class="txt_3">Regularly evaluates our talent to ensure quality</p>
+      <img src="images/icon-karma.svg" alt="Karma">
+    </div>
+    <div class="card blues">
+      <h3 class="txt_22">Calculator</h3>
+      <p class="txt_3">Uses data from past projects to provide better delivery estimates</p>
+      <img src="images/icon-calculator.svg" alt="Calculator">
+    </div>
+  </div>
+</body>
+</html>
